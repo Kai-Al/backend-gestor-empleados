@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -53,4 +54,7 @@ public class Persona implements Serializable {
 
     @Column(name = "departamento", nullable = false, length = 50)
     private @NonNull String departamento;
+
+    @Column (name = "fechaIngreso", nullable = false, length = 50)
+    private @NonNull Date fechaIngreso;
 }
